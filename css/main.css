@@ -37,7 +37,7 @@ h1 {
 
 .background-image img {
   width: 100%;
-  height: 250px;
+  height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
@@ -51,10 +51,10 @@ h1 {
   bottom: 70px;
 }
 
-.menu-entree {
+.menu-entree, .menu-main-dishes, .menu-desserts {
   font-weight: 400;
   position: relative;
-  bottom: 70px;
+  bottom: 80px;
   left: 10px;
 }
 
@@ -63,7 +63,7 @@ hr {
   float: left;
   position: relative;
   left: 9px;
-  bottom: 90px;
+  bottom: 100px;
   height: 3px;
   border-width: 0;
   color: #99E2D0;
@@ -385,6 +385,80 @@ footer h4 {
 footer p {
   padding-left: 20px;
   color: white;
+}
+
+.entree-items, .main-dish-items, .dessert-items {
+  position: relative;
+  bottom: 95px;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 5px;
+}
+
+.entree-items button, .main-dish-items button, .dessert-items button {
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
+  height: 60px;
+  width: 28%;
+  border-radius: 15px;
+  margin-right: 20px;
+  -webkit-box-shadow: 0 8px 6px -2px #919191;
+          box-shadow: 0 8px 6px -2px #919191;
+  border: none;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.dish {
+  font-weight: bold;
+  float: left;
+}
+
+.dish-info {
+  float: left;
+}
+
+.price {
+  font-weight: bold;
+  position: relative;
+  float: right;
+}
+
+.order-button {
+  position: relative;
+  left: 5px;
+  bottom: 60px;
+}
+
+.order-button button {
+  padding: 15px 60px;
+  font-size: 16px;
+  border-radius: 25px;
+  background: #ff79da;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#75539e));
+  background: linear-gradient(180deg, #ff79da 0%, #75539e 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: .6s;
+  transition: .6s;
+  -webkit-box-shadow: 0 8px 6px -2px #b3b3b3;
+          box-shadow: 0 8px 6px -2px #b3b3b3;
+}
+
+.order-button button:hover {
+  background: #ff79da;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), to(#9356dc));
+  background: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
 }
 
 .contacth2 {

@@ -12,6 +12,8 @@
     <title>Bastille Menu</title>
 </head>
 <body>
+    <div class="loader"><i class="fas fa-utensils fa-spin"></i></div>
+
     <div class="topnav">
 		<h1><a href="index.html"><span><i class="fas fa-arrow-left"></i></span></a>ohmyfood</h1>
     </div>
@@ -20,28 +22,37 @@
     <h3 class="menu-entree">ENTREES</h3>
     <hr>
     <div class="entree-items">
-        <button type="submit"><span class="dish">Citrus Squid Carpaccio</span><br><span class="dish-info">with orange zest</span><span class="price">25€</span></button>
-        <button type="submit"><span class="dish">Grandmother's Vegetable Soup</span><br><span class="dish-info">carrots, parsnips, Jerusalem artichoke</span><span class="price">35€</span></button>
-        <button type="submit"><span class="dish">Onion Soup</span><br><span class="dish-info">Revisited</span><span class="price">20€</span></button>
+        <button type="submit"><span class="dish">Citrus Squid Carpaccio</span><br><span class="dish-info">with orange zest</span><span class="price">25€</span><span><i class="fas fa-check-circle"></i></span><div class="icon-bg"></div></button>
+        <button type="submit"><span class="dish">Grandmother's Vegetable Soup</span><br><span class="dish-info">parsnips and Jerusalem artichoke</span><span class="price">35€</span><span><i class="fas fa-check-circle"></i></span><div class="icon-bg"></div></button>
+        <button type="submit"><span class="dish">Onion Soup</span><br><span class="dish-info">Revisited</span><span class="price">20€</span><span><i class="fas fa-check-circle"></i></span><div class="icon-bg"></div></button>
     </div>
     <br>
     <h3 class="menu-main-dishes">MAIN DISHES</h3>
     <hr>
     <div class="main-dish-items">
-        <button type="submit"><span class="dish">Scallops</span><br><span class="dish-info">with mashed parsnip</span><span class="price">40€</span></button>
-        <button type="submit"><span class="dish">Magret de canard</span><br><span class="dish-info">with mashed potatoes</span><span class="price">35€</span></button>
-        <button type="submit"><span class="dish">Game Hen</span><br><span class="dish-info">with vegetable gnocchis</span><span class="price">44€</span></button>
+        <button type="submit"><span class="dish">Scallops</span><br><span class="dish-info">with mashed parsnip</span><span class="price">40€</span><span><i class="fas fa-check-circle"></i></span><div class="icon-bg"></div></button>
+        <button type="submit"><span class="dish">Magret de canard</span><br><span class="dish-info">with mashed potatoes</span><span class="price">35€</span><span><i class="fas fa-check-circle"></i></span><div class="icon-bg"></div></button>
+        <button type="submit"><span class="dish">Game Hen</span><br><span class="dish-info">with vegetable gnocchis</span><span class="price">44€</span><span><i class="fas fa-check-circle"></i></span><div class="icon-bg"></div></button>
     </div>
     <br>
     <h3 class="menu-desserts">DESSERTS</h3>
     <hr>
     <div class="dessert-items">
-        <button type="submit"><span class="dish">Floral Ice Cream</span><br><span class="dish-info">with hazelnut butter</span><span class="price">18€</span></button>
-        <button type="submit"><span class="dish">Chocolate Lava Cake</span><br><span class="dish-info">Revisited</span><span class="price">22€</span></button>
-        <button type="submit"><span class="dish">Napolean</span><br><span class="dish-info">with blueberries and marzipan</span><span class="price">23€</span></button>
+        <button type="submit"><span class="dish">Floral Ice Cream</span><br><span class="dish-info">with hazelnut butter</span><span class="price">18€</span><span><i class="fas fa-check-circle"></i></span><div class="icon-bg"></div></button>
+        <button type="submit"><span class="dish">Chocolate Lava Cake</span><br><span class="dish-info">Revisited</span><span class="price">22€</span><span><i class="fas fa-check-circle"></i></span><div class="icon-bg"></div></button>
+        <button type="submit"><span class="dish">Napolean</span><br><span class="dish-info">with blueberries and marzipan</span><span class="price">23€</span><span><i class="fas fa-check-circle"></i></span><div class="icon-bg"></div></button>
     </div>
     <div class="order-button">
-        <a href="index.html"><button type="submit">Order</button></a>
+        <form action="index.html">
+            <input type="submit" value="Order" />
+        </form>
     </div>
+    <footer>
+		<h4>ohmyfood</h4>
+		<a href="#"><p><i class="fas fa-utensils"></i>  Suggest a restaurant</p></a>
+		<a href="#"><p><i class="fas fa-hands-helping"></i>  Become a partner</p></a>
+		<a href="#"><p>Legal</p></a>
+		<a href="contact.html"><p>Contact</p></a>
+	</footer>
 </body>
 </html>

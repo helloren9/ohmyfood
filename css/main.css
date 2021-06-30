@@ -183,7 +183,9 @@ hr {
   background-color: white;
   height: 200px;
   margin-left: -10px;
-  margin-right: -10px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .info h2 {
@@ -196,8 +198,9 @@ hr {
   width: 330px;
   height: 75px;
   margin: 20px;
+  margin-right: 50px;
   position: relative;
-  left: 20px;
+  left: 40px;
   top: 10px;
   font-size: 16px;
   border-radius: 20px;
@@ -207,6 +210,9 @@ hr {
   cursor: pointer;
   -webkit-transition: .6s;
   transition: .6s;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .info button:hover {
@@ -268,8 +274,7 @@ hr {
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   grid-gap: 20px;
   top: 10px;
 }
@@ -277,8 +282,8 @@ hr {
 .restaurant-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 300px 1fr;
-      grid-template-rows: 300px 1fr;
+  -ms-grid-rows: 270px 1fr;
+      grid-template-rows: 270px 1fr;
 }
 
 .restaurant-cards img {
@@ -429,17 +434,9 @@ footer p {
 
 .entree-items, .main-dish-items, .dessert-items {
   position: relative;
-  bottom: 95px;
+  bottom: 90px;
   width: 100%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   left: 5px;
 }
 
@@ -448,9 +445,10 @@ footer p {
   padding: 10px;
   cursor: pointer;
   height: 70px;
-  width: 30%;
+  width: 370px;
   border-radius: 15px;
   margin-right: 20px;
+  margin-bottom: 15px;
   -webkit-box-shadow: 0 8px 6px -2px #919191;
           box-shadow: 0 8px 6px -2px #919191;
   border: none;
@@ -482,8 +480,8 @@ footer p {
 
 .entree-items button:hover .fa-check-circle, .main-dish-items button:hover .fa-check-circle, .dessert-items button:hover .fa-check-circle {
   display: inline-block;
-  -webkit-animation: rotate .8s linear;
-          animation: rotate .8s linear;
+  -webkit-animation: rotate .7s linear;
+          animation: rotate .7s linear;
 }
 
 @-webkit-keyframes animateIn {
@@ -575,7 +573,7 @@ footer p {
   font-size: 30px;
   padding: 10px;
   bottom: 20px;
-  left: 31px;
+  left: 30px;
   display: none;
   z-index: 1;
 }
@@ -587,7 +585,7 @@ footer p {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: relative;
-  left: 304px;
+  left: 300px;
   bottom: 32px;
   opacity: 0;
 }
@@ -693,5 +691,39 @@ footer p {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+@media only screen and (max-width: 1224px) {
+  .info {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 996px) {
+  .info button {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 779px) {
+  .info {
+    height: 420px;
+  }
+}
+
+@media only screen and (max-width: 605px) {
+  .info .button {
+    position: relative;
+    left: 10px;
+  }
+  .restaurant-name .fa-heart {
+    position: relative;
+    left: 70px;
+  }
+  .restaurant-cards {
+    position: relative;
+    width: 90%;
+    left: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
